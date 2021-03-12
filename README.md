@@ -1,6 +1,6 @@
-![EmuFlight](docs/assets/images/EmuFlight.png)
+## FlowFlight Beta
 
-EmuFlight is flight controller software (firmware) used to fly multi-rotor craft.
+FlowFlight is flight controller software (firmware) used to fly multi-rotor craft.
 
 This fork differs from Baseflight, Cleanflight and Betaflight in that it focuses on flight performance, innovative filtering, and leading-edge features.
 
@@ -10,12 +10,12 @@ This fork differs from Baseflight, Cleanflight and Betaflight in that it focuses
 
 ## News
 
-Currently working on the first official release of EmuFlight.
+Currently working on the first official release of FlowFlight.
 To get the latest updates as well as support from us, you can join our discord at <https://discord.gg/gdP9CwE>.
 
 ## Features
 
-EmuFlight has some of the following features:
+FlowFlight has some of the following features:
 
 * Multi-color RGB LED strip support (each LED can be a different color using variable length WS2811 Addressable RGB strips - use for Orientation Indicators, Low Battery Warning, Flight Mode Status, Initialization Troubleshooting, etc)
 * DShot (150, 300, 600, 1200, 2400, 4800), Multishot, and Oneshot (125 and 42) motor protocol support
@@ -35,23 +35,15 @@ EmuFlight has some of the following features:
 
 ## Installation & Documentation
 
-See: https://github.com/emuflight/EmuFlight/wiki
-
-## Support and Developers Channel
-
-There's a dedicated Discord chat channel here:
-
-https://discord.gg/gdP9CwE
-
-Etiquette: Don't ask to ask and please wait around long enough for a reply - sometimes people are out flying, asleep or at work and can't answer immediately.
+See: https://github.com/CoderElectronics/FlowFlight/wiki
 
 ## Configuration Tool
 
-To configure EmuFlight you should use the EmuFlight-configurator GUI tool (Windows/OSX/Linux) which can be found here:
+To configure FlowFlight you should use the FlowFlight-configurator GUI tool (Windows/OSX/Linux) which can be found here:
 
-https://github.com/emuflight/EmuConfigurator
+https://github.com/CoderElectronics/FlowFlight-Configurator
 
-## DJI OSD [In]Compatibility
+## DJI OSD
 
 Setting PIDs and Rates (except for Feed Forward) is supported with the DJI OSD. The filtering menus (MISC PP, FILT PP, FILT GLB) are not currently supported and may result in unintended filtering settings.
 
@@ -64,11 +56,11 @@ Contributions are welcome and encouraged. You can contribute in many ways:
 * Bug reporting & fixes.
 * New feature ideas & suggestions.
 
-The best place to start is the EmuFlight Discord (registration [here](https://discord.gg/fXPP49e). Next place is the github issue tracker:
+The first place is the github issue tracker:
 
-https://github.com/emuflight/EmuFlight/issues
+https://github.com/CoderElectronics/FlowFlight/issues
 
-https://github.com/emuflight/EmuConfigurator/issues
+https://github.com/CoderElectronics/FlowFlight-Configurator/issues
 
 Before creating new issues please check to see if there is an existing one, search first otherwise you waste peoples time when they could be coding instead!
 
@@ -81,17 +73,15 @@ If you want to contribute financially on an ongoing basis, you should consider b
 Contribution of bugfixes and new features is encouraged. Please be aware that we have a thorough review process for pull requests, and be prepared to explain what you want to achieve with your pull request.
 Before starting to write code, please read our [development guidelines](docs/development/Development.md ) and [coding style definition](docs/development/CodingStyle.md).
 
-## EmuFlight Releases
+## FlowFlight Releases
 
-[![Build Status](https://travis-ci.org/emuflight/EmuFlight.svg?branch=master)](https://travis-ci.org/emuflight/EmuFlight) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5422b54319254b6f9b6d01464ae9380c)](https://www.codacy.com/gh/emuflight/EmuFlight?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=emuflight/EmuFlight&amp;utm_campaign=Badge_Grade)
-
-https://github.com/emuflight/EmuFlight/releases
+https://github.com/CoderElectronics/FlowFlight/releases
 
 ## Open Source / Contributors
 
-EmuFlight is software that is **open source** and is available free of charge without warranty to all users.
+FlowFlight is software that is **open source** and is available free of charge without warranty to all users.
 
-EmuFlight is forked from Betaflight, so thanks goes to all those whom have contributed to Cleanflight, Betaflight, Butterflight and their origins.
+FlowFlight is forked from Emuflight, so thanks goes to all those whom have contributed to Emuflight, Cleanflight, Betaflight, Butterflight and their origins.
 
 Origins for this fork (Thanks!):
 * **Alexinparis** (for MultiWii),
@@ -101,9 +91,9 @@ Origins for this fork (Thanks!):
 * **Sambas** (for the original STM32F4 port), and
 * **Marinus** (for forking IMUF thus beginning EmuFlight).
 
-The EmuFlight Configurator is forked from Betaflight Configurator and its origins.
+The FlowFlight Configurator is forked from Betaflight Configurator and its origins.
 
-Origins for EmuFlight Configurator:
+Origins for FlowFlight Configurator:
 * **Dominic Clifton** (for Cleanflight configurator), and
 * **ctn** (for the original Configurator).
 
