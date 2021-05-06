@@ -9,11 +9,6 @@ This fork differs from Baseflight, Cleanflight and Betaflight in that it focuses
 
 **DJI components bypass Configurator safety-checks. Do not attempt arming while connected to Configurator with LiPo plugged.  Always remove propellers and use a smoke-stopper for extra safety.**
 
-## News
-
-Currently working on the first official release of FlowFlight.
-To get the latest updates as well as support from us, you can join our discord at <https://discord.gg/gdP9CwE>.
-
 ## Features
 
 FlowFlight has some of the following features:
@@ -32,6 +27,9 @@ FlowFlight has some of the following features:
 * Configurable serial ports for Serial RX, Telemetry, ESC telemetry, MSP, GPS, OSD, Sonar, etc - Use most devices on any port, softserial included
 * VTX support for Unify Pro and IRC Tramp
 * Latest IMUF filtering technology
+* LQG Control Scheme with a port of dRonin Autotune (Coming soon)
+* Improved Graphical OSD System
+* Partial-stick Slider controlled 3D Mode
 * and MUCH, MUCH more.
 
 ## Installation & Documentation
