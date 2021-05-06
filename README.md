@@ -1,3 +1,4 @@
+![](docs/ff.svg)
 ## FlowFlight Beta
 
 FlowFlight is flight controller software (firmware) used to fly multi-rotor craft.
