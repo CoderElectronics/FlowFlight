@@ -27,10 +27,13 @@ FlowFlight has some of the following features:
 * Configurable serial ports for Serial RX, Telemetry, ESC telemetry, MSP, GPS, OSD, Sonar, etc - Use most devices on any port, softserial included
 * VTX support for Unify Pro and IRC Tramp
 * Latest IMUF filtering technology
-* LQG Control Scheme with a port of dRonin Autotune (Coming soon)
+* and MUCH, MUCH more!
+
+Some of the main features coming soon:
+* LQG Control Scheme with a port of dRonin Autotune
 * Improved Graphical OSD System
 * Partial-stick Slider controlled 3D Mode
-* and MUCH, MUCH more.
+* and MUCH more!
 
 ## Installation & Documentation
 
