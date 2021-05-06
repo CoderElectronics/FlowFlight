@@ -191,7 +191,7 @@ static OSD_Entry trampMenuEntries[] = {
     { "PIT",    OME_TAB,     trampCmsSetPitMode,     &trampCmsEntPitMode,   0 },
     { "BAND",   OME_TAB,     trampCmsConfigBand,     &trampCmsEntBand,      0 },
     { "CHAN",   OME_TAB,     trampCmsConfigChan,     &trampCmsEntChan,      0 },
-    { "(FREQ)", OME_UINT16,  NULL,                   &trampCmsEntFreqRef,   DYNAMIC },
+    { "+ FREQ", OME_UINT16,  NULL,                   &trampCmsEntFreqRef,   DYNAMIC },
     { "POWER",  OME_TAB,     trampCmsConfigPower,    &trampCmsEntPower,     0 },
     { "T(C)",   OME_INT16,   NULL,                   &trampCmsEntTemp,      DYNAMIC },
     { "SET",    OME_Submenu, cmsMenuChange,          &trampCmsMenuCommence, 0 },

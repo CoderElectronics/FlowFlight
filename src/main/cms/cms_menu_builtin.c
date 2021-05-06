@@ -119,7 +119,7 @@ static OSD_Entry menuFeaturesEntries[] = {
 #endif
 #endif // VTX_CONTROL
 #ifdef USE_LED_STRIP
-    {"LED STRIP", OME_Submenu, cmsMenuChange, &cmsx_menuLedstrip, 0},
+    {"WS2812 LED", OME_Submenu, cmsMenuChange, &cmsx_menuLedstrip, 0},
 #endif // LED_STRIP
 #ifdef USE_CMS_FAILSAFE_MENU
     {"FAILSAFE", OME_Submenu, cmsMenuChange, &cmsx_menuFailsafe, 0},
@@ -145,18 +145,19 @@ static CMS_Menu menuFeatures = {
 static OSD_Entry menuMainEntries[] = {
     {"-- MAIN --",  OME_Label, NULL, NULL, 0},
 
-    {"PROFILE",     OME_Submenu,  cmsMenuChange, &cmsx_menuImu, 0},
-    {"FEATURES",    OME_Submenu,  cmsMenuChange, &menuFeatures, 0},
+    {"PID PROFILE", OME_Submenu,  cmsMenuChange, &cmsx_menuImu, 0},
+    {"HW CONFIG",   OME_Submenu,  cmsMenuChange, &menuFeatures, 0},
+    {"FLOW CONFIG", OME_Submenu,  cmsMenuChange, &cmsx_menuMisc, 0},
 #ifdef USE_OSD
     {"OSD",         OME_Submenu,  cmsMenuChange, &cmsx_menuOsd, 0},
 #endif
-    {"FC&FW INFO",  OME_Submenu,  cmsMenuChange, &menuInfo, 0},
-    {"MISC",        OME_Submenu,  cmsMenuChange, &cmsx_menuMisc, 0},
+    {"SYS INFO",    OME_Submenu,  cmsMenuChange, &menuInfo, 0},
+    {"EXTRA",       OME_Submenu,  cmsMenuChange, &cmsx_menuMisc, 0},
     {"EXIT",        OME_OSD_Exit, cmsMenuExit,   (void *)CMS_EXIT, 0},
-    {"SAVE&EXIT",   OME_OSD_Exit, cmsMenuExit,   (void *)CMS_EXIT_SAVE, 0},
-    {"SAVE&REBOOT", OME_OSD_Exit, cmsMenuExit,   (void *)CMS_EXIT_SAVEREBOOT, 0},
+    {"SAVE EXIT",   OME_OSD_Exit, cmsMenuExit,   (void *)CMS_EXIT_SAVE, 0},
+    {"SAVE REBOOT", OME_OSD_Exit, cmsMenuExit,   (void *)CMS_EXIT_SAVEREBOOT, 0},
 #ifdef CMS_MENU_DEBUG
-    {"ERR SAMPLE",  OME_Submenu,  cmsMenuChange, &menuInfoEntries[0], 0},
+    {"DEBUGGING",  OME_Submenu,  cmsMenuChange, &menuInfoEntries[0], 0},
 #endif
 
     {NULL, OME_END, NULL, NULL, 0}

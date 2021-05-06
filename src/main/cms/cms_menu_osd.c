@@ -63,7 +63,7 @@ static long menuOsdActiveElemsOnExit(const OSD_Entry *self) {
 }
 
 OSD_Entry menuOsdActiveElemsEntries[] = {
-    {"--- ACTIV ELEM ---", OME_Label,   NULL, NULL, 0},
+    {"--- OSD ELEMENT ---", OME_Label,   NULL, NULL, 0},
     {"RSSI / LQ",          OME_VISIBLE, NULL, &osdConfig_item_pos[OSD_RSSI_VALUE], 0},
     {"LQ FORMAT",          OME_TAB,     NULL, &(OSD_TAB_t){&osdConfig_one.lq_format, FORMAT_COUNT, cms_osdcrsfformat}, 0 },
     {"CRSF TX POWER",      OME_VISIBLE, NULL, &osdConfig_item_pos[OSD_CRSF_TX], 0},

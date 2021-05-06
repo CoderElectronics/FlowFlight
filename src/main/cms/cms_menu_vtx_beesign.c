@@ -155,8 +155,8 @@ static OSD_Entry bsCmsMenuRaceModeEntries[] = {
     // {"MODE",        OME_Submenu,    cmsMenuChange,          &cmsx_menuVtxBsMode,    0},
     {"BAND",        OME_TAB,        bsCmsConfigBandByGvar,  &bsEntryVtxBand,        0},
     {"CHANNEL",     OME_UINT8,      bsCmsConfigBandByGvar,  &bsEntryVtxChannel,     0},
-    {"POWER",       OME_TAB,        NULL,                   &bsEntryVtxPower,       0},
-    {"(FREQ)",      OME_UINT16,     NULL,                   &bsShowVtxFreq,         DYNAMIC },
+    {"+ POWER",       OME_TAB,        NULL,                   &bsEntryVtxPower,       0},
+    {"+ FREQ",      OME_UINT16,     NULL,                   &bsShowVtxFreq,         DYNAMIC },
     {"SAVE",        OME_Funcall,    bsCmsConfigRaceSave,    NULL,                   0},
     {"BACK",        OME_Back,       NULL,                   NULL,                   0},
     {NULL,          OME_END,        NULL,                   NULL,                   0}
@@ -165,8 +165,8 @@ static OSD_Entry bsCmsMenuRaceModeEntries[] = {
 static OSD_Entry bsCmsMenuManualModeEntries[] = {
     {"--- BEESIGN MAMUAL---", OME_Label, NULL, NULL, 0},
     {"MODE",        OME_Submenu,    cmsMenuChange,          &cmsx_menuVtxBsMode,    0},
-    {"FREQ",        OME_UINT16,     NULL,                   &bsEntryVtxFreq,        0},
-    {"POWER",       OME_TAB,        NULL,                   &bsEntryVtxPower,       0},
+    {"+ FREQ",      OME_UINT16,     NULL,                   &bsEntryVtxFreq,        0},
+    {"+ POWER",     OME_TAB,        NULL,                   &bsEntryVtxPower,       0},
     {"SAVE",        OME_Funcall,    bsCmsConfigManualSave,  NULL,                   0},
     {"BACK",        OME_Back,       NULL,                   NULL,                   0},
     {NULL,          OME_END,        NULL,                   NULL,                   0}
@@ -176,8 +176,8 @@ static OSD_Entry bsCmsMenuManualModeEntries[] = {
 static OSD_Entry bsCmsMenuPorModeEntries[] = {
     {"--- BEESIGN POR---", OME_Label, NULL, NULL, 0},
     {"MODE",        OME_Submenu,    cmsMenuChange,          &cmsx_menuVtxBsMode,    0},
-    {"(FREQ)",      OME_String,     NULL,                   &porModeFREQStr,        0},
-    {"(POWER)",     OME_String,     NULL,                   &porModeStr,            0},
+    {"+ FREQ",      OME_String,     NULL,                   &porModeFREQStr,        0},
+    {"+ POWER",     OME_String,     NULL,                   &porModeStr,            0},
     {"SAVE",        OME_Funcall,    bsCmsConfigPorSave,     NULL,                   0},
     {"BACK",        OME_Back,       NULL,                   NULL,                   0},
     {NULL,          OME_END,        NULL,                   NULL,                   0}

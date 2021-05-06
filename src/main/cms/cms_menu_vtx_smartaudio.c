@@ -549,7 +549,7 @@ static OSD_Entry saCmsMenuChanModeEntries[] = {
     { "",       OME_Label,   NULL,                   saCmsStatusString,  DYNAMIC },
     { "BAND",   OME_TAB,     saCmsConfigBandByGvar,  &saCmsEntBand,      0 },
     { "CHAN",   OME_TAB,     saCmsConfigChanByGvar,  &saCmsEntChan,      0 },
-    { "(FREQ)", OME_UINT16,  NULL,                   &saCmsEntFreqRef,   DYNAMIC },
+    { "+ FREQ", OME_UINT16,  NULL,                   &saCmsEntFreqRef,   DYNAMIC },
     { "POWER",  OME_TAB,     saCmsConfigPowerByGvar, &saCmsEntPower,     0 },
     { "SET",    OME_Submenu, cmsMenuChange,          &saCmsMenuCommence, 0 },
     { "CONFIG", OME_Submenu, cmsMenuChange,          &saCmsMenuConfig,   0 },
