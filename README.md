@@ -1,3 +1,4 @@
+![](docs/ff.svg)
 ## FlowFlight Beta
 
 FlowFlight is flight controller software (firmware) used to fly multi-rotor craft.
@@ -7,11 +8,6 @@ This fork differs from Baseflight, Cleanflight and Betaflight in that it focuses
 ## WARNING
 
 **DJI components bypass Configurator safety-checks. Do not attempt arming while connected to Configurator with LiPo plugged.  Always remove propellers and use a smoke-stopper for extra safety.**
-
-## News
-
-Currently working on the first official release of FlowFlight.
-To get the latest updates as well as support from us, you can join our discord at <https://discord.gg/gdP9CwE>.
 
 ## Features
 
@@ -31,7 +27,13 @@ FlowFlight has some of the following features:
 * Configurable serial ports for Serial RX, Telemetry, ESC telemetry, MSP, GPS, OSD, Sonar, etc - Use most devices on any port, softserial included
 * VTX support for Unify Pro and IRC Tramp
 * Latest IMUF filtering technology
-* and MUCH, MUCH more.
+* and MUCH, MUCH more!
+
+Some of the main features coming soon:
+* LQG Control Scheme with a port of dRonin Autotune
+* Improved Graphical OSD System
+* Partial-stick Slider controlled 3D Mode
+* and MUCH more!
 
 ## Installation & Documentation
 
