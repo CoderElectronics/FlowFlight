@@ -48,6 +48,7 @@
 #include "cms/cms_menu_ledstrip.h"
 #include "cms/cms_menu_misc.h"
 #include "cms/cms_menu_power.h"
+#include "cms/cms_menu_flow.h"
 
 // VTX supplied menus
 
@@ -78,11 +79,11 @@ static long cmsx_InfoInit(void) {
 
 static OSD_Entry menuInfoEntries[] = {
     { "--- INFO ---", OME_Label, NULL, NULL, 0 },
-    { "FWID", OME_String, NULL, BUTTERFLIGHT_IDENTIFIER, 0 },
-    { "FWVER", OME_String, NULL, FC_VERSION_STRING, 0 },
-    { "GITREV", OME_String, NULL, infoGitRev, 0 },
-    { "TARGET", OME_String, NULL, infoTargetName, 0 },
-    { "BACK", OME_Back, NULL, NULL, 0 },
+    { "  FW ID", OME_String, NULL, BUTTERFLIGHT_IDENTIFIER, 0 },
+    { "  FW VER", OME_String, NULL, FC_VERSION_STRING, 0 },
+    { "  GIT REV", OME_String, NULL, infoGitRev, 0 },
+    { "  TARGET", OME_String, NULL, infoTargetName, 0 },
+    { "< BACK", OME_Back, NULL, NULL, 0 },
     { NULL, OME_END, NULL, NULL, 0 }
 };
 
@@ -99,7 +100,7 @@ static CMS_Menu menuInfo = {
 // Features
 
 static OSD_Entry menuFeaturesEntries[] = {
-    {"--- FEATURES ---", OME_Label, NULL, NULL, 0},
+    {"--- DEVICES ---", OME_Label, NULL, NULL, 0},
 
 #if defined(USE_BLACKBOX)
     {"BLACKBOX", OME_Submenu, cmsMenuChange, &cmsx_menuBlackbox, 0},
@@ -125,7 +126,7 @@ static OSD_Entry menuFeaturesEntries[] = {
     {"FAILSAFE", OME_Submenu, cmsMenuChange, &cmsx_menuFailsafe, 0},
 #endif
     {"POWER", OME_Submenu, cmsMenuChange, &cmsx_menuPower, 0},
-    { "SAVE&EXIT",   OME_OSD_Exit, cmsMenuExit,   (void *)CMS_EXIT_SAVE, 0},
+    {"SAVE&EXIT",   OME_OSD_Exit, cmsMenuExit,   (void *)CMS_EXIT_SAVE, 0},
     {"BACK", OME_Back, NULL, NULL, 0},
     {NULL, OME_END, NULL, NULL, 0}
 };
@@ -147,7 +148,7 @@ static OSD_Entry menuMainEntries[] = {
 
     {"PID PROFILE", OME_Submenu,  cmsMenuChange, &cmsx_menuImu, 0},
     {"HW CONFIG",   OME_Submenu,  cmsMenuChange, &menuFeatures, 0},
-    {"FLOW CONFIG", OME_Submenu,  cmsMenuChange, &cmsx_menuMisc, 0},
+    {"FLOW SETUP",  OME_Submenu,  cmsMenuChange, &cmsx_menuFlow, 0},
 #ifdef USE_OSD
     {"OSD",         OME_Submenu,  cmsMenuChange, &cmsx_menuOsd, 0},
 #endif
