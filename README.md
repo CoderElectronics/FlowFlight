@@ -66,9 +66,7 @@ https://github.com/CoderElectronics/FlowFlight-Configurator/issues
 
 Before creating new issues please check to see if there is an existing one, search first otherwise you waste peoples time when they could be coding instead!
 
-If you want to contribute to our efforts financially, please consider making a donation to us through PayPal (Not yet setup).
-
-If you want to contribute financially on an ongoing basis, you should consider becoming a patron for us on Patreon (Not yet setup).
+If you want to contribute to our efforts financially, please consider making a donation to us through PayPal at http://paypal.me/uptimefpv.
 
 ## Developers
 
