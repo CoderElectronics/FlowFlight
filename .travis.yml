@@ -1,5 +1,5 @@
 # travis continuous integration declaration for
-# Emuflight
+# Flowflight
 
 env:
   matrix:
